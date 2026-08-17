@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiveLED 樂打燈 — 隱私權政策</title>
+<meta name="robots" content="index, follow">
+<style>
+:root {
+  --bg: #ffffff;
+  --fg: #1f2430;
+  --muted: #5b6474;
+  --rule: #e3e7ee;
+  --accent: #7c3aed;
+  --card: #f7f8fb;
+  --code-bg: #f0f2f7;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0a0e17;
+    --fg: #e6e9f0;
+    --muted: #9aa4b8;
+    --rule: #1e2634;
+    --accent: #a78bfa;
+    --card: #111827;
+    --code-bg: #161d2b;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0a0e17;
+  --fg: #e6e9f0;
+  --muted: #9aa4b8;
+  --rule: #1e2634;
+  --accent: #a78bfa;
+  --card: #111827;
+  --code-bg: #161d2b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC",
+               "Microsoft JhengHei", "PingFang TC", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+header.site {
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+header.site a.brand {
+  color: var(--fg);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+header.site nav { margin-top: 0.5rem; font-size: 0.9rem; }
+header.site nav a { color: var(--muted); text-decoration: none; margin-right: 1rem; }
+header.site nav a:hover, header.site nav a.here { color: var(--accent); }
+h1 { font-size: 1.65rem; line-height: 1.35; margin: 0 0 0.75rem; }
+h2 {
+  font-size: 1.3rem;
+  margin: 2.75rem 0 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+}
+/* 語言分隔線後面緊接著 h2 時，會出現兩條橫線疊在一起 */
+hr + h2 { border-top: 0; padding-top: 0; margin-top: 1.25rem; }
+h3 { font-size: 1.05rem; margin: 1.75rem 0 0.5rem; }
+p, ul, ol { margin: 0.75rem 0; }
+ul, ol { padding-left: 1.4rem; }
+li { margin: 0.3rem 0; }
+a { color: var(--accent); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+code {
+  background: var(--code-bg);
+  padding: 0.12em 0.38em;
+  border-radius: 4px;
+  font-size: 0.88em;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+.tablewrap { overflow-x: auto; margin: 1.25rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+th, td {
+  border: 1px solid var(--rule);
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: var(--card); font-weight: 600; }
+table.meta th { width: 34%; }
+footer.site {
+  margin-top: 4rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.cards { display: grid; gap: 1rem; margin: 2rem 0; }
+.card {
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 1.1rem 1.25rem;
+  background: var(--card);
+}
+.card a { font-weight: 600; text-decoration: none; font-size: 1.05rem; }
+.card p { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.92rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <a class="brand" href="index.html">LiveLED 樂打燈</a>
+  <nav><a href="index.html">首頁</a><a href="privacy.html" class="here">隱私權政策 / Privacy</a><a href="terms.html">使用條款 / Terms</a></nav>
+</header>
+<h1 id="liveled-樂打燈-隱私權政策">LiveLED 樂打燈 — 隱私權政策</h1>
+<div class="tablewrap">
+<table class="meta">
+<tbody>
+<tr><th>版本</th><td>v1.0</td></tr>
+<tr><th>生效日期</th><td>2026-08-17</td></tr>
+<tr><th>適用應用程式</th><td>LiveLED 樂打燈（<code>com.app.liveled</code>）</td></tr>
+<tr><th>聯絡方式</th><td>support@kyappstudio.com</td></tr>
+</tbody></table></div>
+<p>語言 / Language：<a href="#繁體中文">繁體中文</a> · <a href="#简体中文">简体中文</a> · <a href="#english">English</a></p>
+<hr>
+<h2 id="繁體中文">繁體中文</h2>
+<h3 id="一句話">一句話</h3>
+<p>LiveLED 沒有帳號、沒有屬於我們的伺服器。你輸入的跑馬燈文字、顏色、速度與預設檔全部留在你的裝置上，我們看不到，也無從取得。</p>
+<p>App 會連線的情況只有三種：向 Google 取得廣告、向 Google Play 確認你是否已購買、以及回報崩潰與匿名使用統計。這三件事都不包含你輸入的任何文字內容。</p>
+<h3 id="我們不做什麼">我們不做什麼</h3>
+<ul>
+<li>不要求註冊或登入，沒有任何帳號系統。</li>
+<li>不讀取你的通訊錄、相簿、位置或簡訊。</li>
+<li>不會把你輸入的跑馬燈文字傳送給任何人，廣告商也一樣。</li>
+<li>不會錄製聲音（麥克風的使用方式請見下方〈麥克風權限〉）。</li>
+<li>不販賣任何個人資料。</li>
+</ul>
+<h3 id="廣告">廣告</h3>
+<p>免費版在「設定頁」提供「補充電量」按鈕，你主動點擊後才會播放一支獎勵式廣告，看完可換取播放時長。廣告由 Google AdMob 提供。</p>
+<p><strong>播放跑馬燈的畫面完全沒有廣告</strong>——沒有橫幅、沒有插頁、沒有任何遮擋。這是本 App 的核心設計，不會改變。</p>
+<p>為了送出廣告，Google 可能會取得你裝置的廣告識別碼（Advertising ID）、大致所在地區、裝置型號與語言等資訊，並依此決定顯示哪一則廣告。這部分適用 <a href="https://policies.google.com/privacy" rel="noopener">Google 的隱私權政策</a>。我們不經手廣告內容，也看不到廣告向你顯示了什麼。</p>
+<p>我們不會把 App 內的任何內容交給 Google——廣告不知道你打了什麼字、支持哪個藝人。</p>
+<p>你可以在 Android 系統設定的「隱私權 › 廣告」中重設或刪除廣告 ID，也可以關閉個人化廣告。</p>
+<p><strong>購買永久買斷之後，充能按鈕會消失，App 不再請求任何廣告。</strong></p>
+<h3 id="歐洲經濟區英國與瑞士的使用者">歐洲經濟區、英國與瑞士的使用者</h3>
+<p>如果你所在地區適用 GDPR 或同等規範，App 會在首次啟動廣告功能前顯示同意聲明視窗，讓你選擇是否接受個人化廣告。你可以隨時在設定頁的「重新設定廣告偏好」中更改這個選擇。</p>
+<p>你就 Google 所處理的資料享有存取、更正、刪除與反對處理等權利，行使方式請參閱 Google 的隱私權政策。就我們自行處理的部分（見〈崩潰回報與使用統計〉），你可以來信 support@kyappstudio.com 要求刪除。</p>
+<h3 id="麥克風權限選用預設關閉">麥克風權限（選用，預設關閉）</h3>
+<p>App 有一個「隨音樂律動」特效，會讓跑馬燈跟著現場音量閃動。這個特效<strong>預設為關閉</strong>，只有在你主動開啟時才會請求麥克風權限。</p>
+<p>啟用後，App 的處理方式是：</p>
+<ul>
+<li><strong>只讀取聲音的音量大小（振幅），不辨識內容、不轉成文字。</strong></li>
+<li><strong>不錄製、不儲存、不寫入任何檔案。</strong> 音訊資料在裝置記憶體中即時計算後立刻丟棄。</li>
+<li><strong>不上傳到任何地方</strong>，包括我們與 Google。</li>
+</ul>
+<p>不授權完全不影響其他功能，只是這個特效無法使用。你可以隨時在系統設定中收回權限。</p>
+<h3 id="購買與付款">購買與付款</h3>
+<p>永久買斷由 Google Play 處理。我們<strong>不會接觸你的付款資訊</strong>——App 只會從 Google Play 收到「這個 Google 帳號是否已購買」這一項結果。</p>
+<p>購買紀錄保存在你的 Google 帳號中，因此換手機或重新安裝後可透過「恢復購買」還原。</p>
+<h3 id="崩潰回報與使用統計">崩潰回報與使用統計</h3>
+<p>App 使用 Google Firebase 的以下服務：</p>
+<div class="tablewrap">
+<table>
+<thead><tr><th>服務</th><th>收集內容</th><th>用途</th></tr></thead>
+<tbody>
+<tr><td>Crashlytics</td><td>崩潰堆疊、Android 版本、機型、崩潰前的操作步驟</td><td>修正錯誤，尤其是播放中黑屏或崩潰</td></tr>
+<tr><td>Analytics</td><td>匿名事件（例如「開始播放」、「看完廣告」、「完成購買」）與國家、語言、機型</td><td>了解哪些功能被使用、改善轉換流程</td></tr>
+<tr><td>Remote Config</td><td>不收集資料，僅下載設定值</td><td>線上調整電量參數，避免每次調整都要更新 App</td></tr>
+</tbody></table></div>
+<p><strong>這些資料都不包含你輸入的跑馬燈文字，也不包含任何能直接識別你身分的資訊</strong>（沒有姓名、email、電話）。適用 <a href="https://policies.google.com/privacy" rel="noopener">Google 的隱私權政策</a>。</p>
+<h3 id="你的資料存在哪裡">你的資料存在哪裡</h3>
+<p>跑馬燈文字、顏色、速度、預設檔、剩餘電量與購買狀態都存在 App 自己的本機儲存空間，只有這個 App 讀得到。移除 App 就會一併刪除。</p>
+<p>其中電量與購買狀態經過加密儲存，並已設定為<strong>排除在 Android 系統自動備份之外</strong>，不會被備份到你的 Google 雲端硬碟。</p>
+<h3 id="網路權限">網路權限</h3>
+<p>網路權限用於：載入廣告、向 Google Play 查詢購買狀態、回報崩潰與統計、下載設定值。</p>
+<p>跑馬燈的顯示、點陣渲染、特效、預設檔存取全部在裝置上完成，<strong>進場後開飛航模式仍可正常播放</strong>。</p>
+<h3 id="分享碼">分享碼</h3>
+<p>「分享碼」功能會把你的設定（文字、顏色、速度、特效）編碼成一段文字或 QR 碼。<strong>這個編碼完全在你的裝置上產生，不經過任何伺服器。</strong> 要把它給誰、透過什麼方式傳，完全由你決定，我們無從得知。</p>
+<h3 id="兒童">兒童</h3>
+<p>本 App 不是為兒童設計的，主要對象是參加演唱會、體育賽事等現場活動的一般使用者。我們自己不蒐集任何人的個人資料。廣告部分由 Google 提供（見上方〈廣告〉），若使用者為兒童，建議由家長透過 Android 的家長監護功能管理。</p>
+<h3 id="政策變更">政策變更</h3>
+<p>政策若有修改，會更新本頁上方的版本與生效日期。若變更涉及新增資料收集，會在 App 內主動告知。</p>
+<hr>
+<h2 id="简体中文">简体中文</h2>
+<h3 id="一句话">一句话</h3>
+<p>LiveLED 没有账号，也没有属于我们的服务器。你输入的跑马灯文字、颜色、速度与预设档全部留在你的设备上，我们看不到，也无法取得。</p>
+<p>应用会联网的情况只有三种：向 Google 请求广告、向 Google Play 确认你是否已购买、以及上报崩溃与匿名使用统计。这三件事都不包含你输入的任何文字内容。</p>
+<h3 id="我们不做什么">我们不做什么</h3>
+<ul>
+<li>不要求注册或登录，没有任何账号系统。</li>
+<li>不读取你的通讯录、相册、位置或短信。</li>
+<li>不会把你输入的跑马灯文字发送给任何人，广告商也一样。</li>
+<li>不会录音（麦克风的使用方式请见下方〈麦克风权限〉）。</li>
+<li>不出售任何个人资料。</li>
+</ul>
+<h3 id="广告">广告</h3>
+<p>免费版在「设置页」提供「补充电量」按钮，只有你主动点击后才会播放一支激励视频广告，看完可换取播放时长。广告由 Google AdMob 提供。</p>
+<p><strong>播放跑马灯的画面完全没有广告</strong>——没有横幅、没有插屏、没有任何遮挡。这是本应用的核心设计，不会改变。</p>
+<p>为了投放广告，Google 可能会获取你设备的广告标识符（Advertising ID）、大致所在地区、设备型号与语言等信息，并据此决定展示哪一条广告。这部分适用 <a href="https://policies.google.com/privacy" rel="noopener">Google 的隐私政策</a>。我们不经手广告内容，也看不到广告向你展示了什么。</p>
+<p>我们不会把应用内的任何内容交给 Google——广告不知道你打了什么字、支持哪位艺人。</p>
+<p>你可以在 Android 系统设置的「隐私 › 广告」中重置或删除广告 ID，也可以关闭个性化广告。</p>
+<p><strong>购买永久买断之后，充能按钮会消失，应用不再请求任何广告。</strong></p>
+<h3 id="欧洲经济区英国与瑞士的用户">欧洲经济区、英国与瑞士的用户</h3>
+<p>如果你所在地区适用 GDPR 或同等规范，应用会在首次启用广告功能前显示同意声明窗口，让你选择是否接受个性化广告。你可以随时在设置页的「重新设置广告偏好」中更改这个选择。</p>
+<p>对于 Google 所处理的数据，你享有访问、更正、删除与反对处理等权利，行使方式请参阅 Google 的隐私政策。对于我们自行处理的部分（见〈崩溃上报与使用统计〉），你可以来信 support@kyappstudio.com 要求删除。</p>
+<h3 id="麦克风权限可选默认关闭">麦克风权限（可选，默认关闭）</h3>
+<p>应用有一个「随音乐律动」特效，会让跑马灯跟着现场音量闪动。这个特效<strong>默认关闭</strong>，只有在你主动开启时才会请求麦克风权限。</p>
+<p>启用后，应用的处理方式是：</p>
+<ul>
+<li><strong>只读取声音的音量大小（振幅），不识别内容、不转成文字。</strong></li>
+<li><strong>不录制、不存储、不写入任何文件。</strong> 音频数据在设备内存中实时计算后立即丢弃。</li>
+<li><strong>不上传到任何地方</strong>，包括我们与 Google。</li>
+</ul>
+<p>不授权完全不影响其他功能，只是这个特效无法使用。你可以随时在系统设置中收回权限。</p>
+<h3 id="购买与付款">购买与付款</h3>
+<p>永久买断由 Google Play 处理。我们<strong>不会接触你的支付信息</strong>——应用只会从 Google Play 收到「这个 Google 账号是否已购买」这一项结果。</p>
+<p>购买记录保存在你的 Google 账号中，因此换手机或重新安装后可通过「恢复购买」还原。</p>
+<h3 id="崩溃上报与使用统计">崩溃上报与使用统计</h3>
+<p>应用使用 Google Firebase 的以下服务：</p>
+<div class="tablewrap">
+<table>
+<thead><tr><th>服务</th><th>收集内容</th><th>用途</th></tr></thead>
+<tbody>
+<tr><td>Crashlytics</td><td>崩溃堆栈、Android 版本、机型、崩溃前的操作步骤</td><td>修复错误，尤其是播放中黑屏或崩溃</td></tr>
+<tr><td>Analytics</td><td>匿名事件（例如「开始播放」、「看完广告」、「完成购买」）与国家、语言、机型</td><td>了解哪些功能被使用、改善转化流程</td></tr>
+<tr><td>Remote Config</td><td>不收集数据，仅下载配置值</td><td>在线调整电量参数，避免每次调整都要更新应用</td></tr>
+</tbody></table></div>
+<p><strong>这些数据都不包含你输入的跑马灯文字，也不包含任何能直接识别你身份的信息</strong>（没有姓名、邮箱、电话）。适用 <a href="https://policies.google.com/privacy" rel="noopener">Google 的隐私政策</a>。</p>
+<h3 id="你的数据存在哪里">你的数据存在哪里</h3>
+<p>跑马灯文字、颜色、速度、预设档、剩余电量与购买状态都存在应用自己的本地存储空间，只有这个应用能读取。卸载应用会一并删除。</p>
+<p>其中电量与购买状态经过加密存储，并已设置为<strong>排除在 Android 系统自动备份之外</strong>，不会被备份到你的 Google 云端硬盘。</p>
+<h3 id="网络权限">网络权限</h3>
+<p>网络权限用于：加载广告、向 Google Play 查询购买状态、上报崩溃与统计、下载配置值。</p>
+<p>跑马灯的显示、点阵渲染、特效、预设档读写全部在设备上完成，<strong>进场后开飞行模式仍可正常播放</strong>。</p>
+<h3 id="分享码">分享码</h3>
+<p>「分享码」功能会把你的设置（文字、颜色、速度、特效）编码成一段文字或二维码。<strong>这个编码完全在你的设备上生成，不经过任何服务器。</strong> 要给谁、通过什么方式传，完全由你决定，我们无从得知。</p>
+<h3 id="儿童">儿童</h3>
+<p>本应用不是为儿童设计的，主要面向参加演唱会、体育赛事等现场活动的一般用户。我们自己不收集任何人的个人资料。广告部分由 Google 提供（见上方〈广告〉），若使用者为儿童，建议由家长通过 Android 的家长监护功能管理。</p>
+<h3 id="政策变更">政策变更</h3>
+<p>政策若有修改，会更新本页顶部的版本与生效日期。若变更涉及新增数据收集，会在应用内主动告知。</p>
+<hr>
+<h2 id="english">English</h2>
+<h3 id="in-short">In short</h3>
+<p>LiveLED has no accounts and no server of ours. The marquee text, colours, speed, and presets you enter stay on your device; we cannot see or obtain them.</p>
+<p>The app connects to the network for exactly three purposes: requesting ads from Google, checking with Google Play whether you have purchased, and reporting crashes and anonymous usage statistics. None of these include any text you type.</p>
+<h3 id="what-we-do-not-do">What we do not do</h3>
+<ul>
+<li>No sign-up or login; there is no account system.</li>
+<li>No access to your contacts, photos, location, or messages.</li>
+<li>Your marquee text is never sent to anyone, advertisers included.</li>
+<li>No audio is ever recorded (see <strong>Microphone permission</strong> below for how the microphone is used).</li>
+<li>No personal data is sold.</li>
+</ul>
+<h3 id="advertising">Advertising</h3>
+<p>The free version offers a "Recharge" button on the Settings screen. Only when you tap it does a rewarded ad play, and watching it grants playback time. Ads are served by Google AdMob.</p>
+<p><strong>The marquee playback screen contains no advertising at all</strong> — no banners, no interstitials, no obstruction of any kind. This is a core design commitment and will not change.</p>
+<p>To serve ads, Google may obtain your device's Advertising ID, approximate region, device model, and language, and use these to decide which ad to show. <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a> applies to that processing. We neither handle nor see the ad content shown to you.</p>
+<p>We never hand any in-app content to Google — the ads do not know what you typed or which artist you support.</p>
+<p>You can reset or delete your Advertising ID, and turn off personalised ads, under Privacy › Ads in Android settings.</p>
+<p><strong>After the lifetime purchase, the recharge button disappears and the app requests no ads at all.</strong></p>
+<h3 id="users-in-the-eea-uk-and-switzerland">Users in the EEA, UK, and Switzerland</h3>
+<p>If GDPR or an equivalent regime applies to you, the app shows a consent dialog before enabling any advertising functionality, letting you choose whether to accept personalised ads. You can change that choice at any time via "Reset ad preferences" on the Settings screen.</p>
+<p>Regarding data processed by Google, you have rights of access, rectification, erasure, and objection; see Google's Privacy Policy for how to exercise them. For the parts we process ourselves (see <strong>Crash reporting and usage statistics</strong>), email support@kyappstudio.com to request deletion.</p>
+<h3 id="microphone-permission-optional-off-by-default">Microphone permission (optional, off by default)</h3>
+<p>The app has a "react to music" effect that makes the marquee pulse with ambient volume. This effect is <strong>off by default</strong>; the microphone permission is requested only when you turn it on yourself.</p>
+<p>Once enabled:</p>
+<ul>
+<li><strong>Only the loudness (amplitude) of the sound is read.</strong> No content recognition, no speech-to-text.</li>
+<li><strong>Nothing is recorded, stored, or written to any file.</strong> Audio data is computed in memory in real time and immediately discarded.</li>
+<li><strong>Nothing is uploaded anywhere</strong>, including to us and to Google.</li>
+</ul>
+<p>Declining changes nothing else; only this one effect becomes unavailable. You can revoke the permission at any time in system settings.</p>
+<h3 id="purchases-and-payment">Purchases and payment</h3>
+<p>The lifetime purchase is handled by Google Play. <strong>We never touch your payment information</strong> — the app receives only one thing from Google Play: whether this Google account has purchased.</p>
+<p>The purchase record lives in your Google account, so it can be restored via "Restore purchase" after changing phones or reinstalling.</p>
+<h3 id="crash-reporting-and-usage-statistics">Crash reporting and usage statistics</h3>
+<p>The app uses the following Google Firebase services:</p>
+<div class="tablewrap">
+<table>
+<thead><tr><th>Service</th><th>What it collects</th><th>Purpose</th></tr></thead>
+<tbody>
+<tr><td>Crashlytics</td><td>Crash stack traces, Android version, device model, the steps taken before the crash</td><td>Fixing bugs, especially black screens or crashes during playback</td></tr>
+<tr><td>Analytics</td><td>Anonymous events (e.g. "playback started", "ad completed", "purchase completed") plus country, language, device model</td><td>Understanding which features are used and improving the flow</td></tr>
+<tr><td>Remote Config</td><td>Collects nothing; only downloads configuration values</td><td>Tuning energy parameters online without shipping an app update</td></tr>
+</tbody></table></div>
+<p><strong>None of this includes the marquee text you type, and none of it directly identifies you</strong> (no name, email, or phone number). <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a> applies.</p>
+<h3 id="where-your-data-lives">Where your data lives</h3>
+<p>Marquee text, colours, speed, presets, remaining energy, and purchase state are stored in the app's own local storage, readable only by this app. Uninstalling the app deletes them.</p>
+<p>Energy and purchase state are stored encrypted and are <strong>excluded from Android's Auto Backup</strong>, so they are not backed up to your Google Drive.</p>
+<h3 id="internet-permission">Internet permission</h3>
+<p>The internet permission is used to: load ads, query purchase state from Google Play, report crashes and statistics, and download configuration values.</p>
+<p>Marquee display, dot-matrix rendering, effects, and preset access all happen on your device — <strong>playback works normally in airplane mode once you are inside the venue.</strong></p>
+<h3 id="share-codes">Share codes</h3>
+<p>The "share code" feature encodes your settings (text, colours, speed, effect) into a short string or QR code. <strong>This encoding is produced entirely on your device and passes through no server.</strong> Whom you give it to, and how, is entirely your choice and unknown to us.</p>
+<h3 id="children">Children</h3>
+<p>This app is not designed for children; it is aimed at general users attending concerts, sporting events, and similar live events. We collect no personal data from anyone. Advertising is provided by Google (see <strong>Advertising</strong> above); where the user is a child, we recommend parents manage this through Android's parental controls.</p>
+<h3 id="changes-to-this-policy">Changes to this policy</h3>
+<p>Any revision updates the version and effective date at the top of this page. If a change involves collecting new data, we will say so in the app.</p>
+<hr>
+<p class="muted"><em>LiveLED 樂打燈 · support@kyappstudio.com</em></p>
+<footer class="site">
+  LiveLED 樂打燈 · <a href="mailto:support@kyappstudio.com">support@kyappstudio.com</a>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiveLED 樂打燈 — 使用條款</title>
+<meta name="robots" content="index, follow">
+<style>
+:root {
+  --bg: #ffffff;
+  --fg: #1f2430;
+  --muted: #5b6474;
+  --rule: #e3e7ee;
+  --accent: #7c3aed;
+  --card: #f7f8fb;
+  --code-bg: #f0f2f7;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0a0e17;
+    --fg: #e6e9f0;
+    --muted: #9aa4b8;
+    --rule: #1e2634;
+    --accent: #a78bfa;
+    --card: #111827;
+    --code-bg: #161d2b;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0a0e17;
+  --fg: #e6e9f0;
+  --muted: #9aa4b8;
+  --rule: #1e2634;
+  --accent: #a78bfa;
+  --card: #111827;
+  --code-bg: #161d2b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC",
+               "Microsoft JhengHei", "PingFang TC", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+header.site {
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+header.site a.brand {
+  color: var(--fg);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+header.site nav { margin-top: 0.5rem; font-size: 0.9rem; }
+header.site nav a { color: var(--muted); text-decoration: none; margin-right: 1rem; }
+header.site nav a:hover, header.site nav a.here { color: var(--accent); }
+h1 { font-size: 1.65rem; line-height: 1.35; margin: 0 0 0.75rem; }
+h2 {
+  font-size: 1.3rem;
+  margin: 2.75rem 0 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+}
+/* 語言分隔線後面緊接著 h2 時，會出現兩條橫線疊在一起 */
+hr + h2 { border-top: 0; padding-top: 0; margin-top: 1.25rem; }
+h3 { font-size: 1.05rem; margin: 1.75rem 0 0.5rem; }
+p, ul, ol { margin: 0.75rem 0; }
+ul, ol { padding-left: 1.4rem; }
+li { margin: 0.3rem 0; }
+a { color: var(--accent); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+code {
+  background: var(--code-bg);
+  padding: 0.12em 0.38em;
+  border-radius: 4px;
+  font-size: 0.88em;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+.tablewrap { overflow-x: auto; margin: 1.25rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+th, td {
+  border: 1px solid var(--rule);
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: var(--card); font-weight: 600; }
+table.meta th { width: 34%; }
+footer.site {
+  margin-top: 4rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.cards { display: grid; gap: 1rem; margin: 2rem 0; }
+.card {
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 1.1rem 1.25rem;
+  background: var(--card);
+}
+.card a { font-weight: 600; text-decoration: none; font-size: 1.05rem; }
+.card p { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.92rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <a class="brand" href="index.html">LiveLED 樂打燈</a>
+  <nav><a href="index.html">首頁</a><a href="privacy.html">隱私權政策 / Privacy</a><a href="terms.html" class="here">使用條款 / Terms</a></nav>
+</header>
+<h1 id="liveled-樂打燈-使用條款">LiveLED 樂打燈 — 使用條款</h1>
+<div class="tablewrap">
+<table class="meta">
+<tbody>
+<tr><th>版本</th><td>v1.0</td></tr>
+<tr><th>生效日期</th><td>2026-08-17</td></tr>
+<tr><th>適用應用程式</th><td>LiveLED 樂打燈（<code>com.app.liveled</code>）</td></tr>
+<tr><th>聯絡方式</th><td>support@kyappstudio.com</td></tr>
+</tbody></table></div>
+<p>語言 / Language：<a href="#繁體中文">繁體中文</a> · <a href="#简体中文">简体中文</a> · <a href="#english">English</a></p>
+<hr>
+<h2 id="繁體中文">繁體中文</h2>
+<h3 id="1-關於本服務">1. 關於本服務</h3>
+<p>LiveLED 樂打燈（以下稱「本 App」）是一款在手機螢幕上顯示 LED 點陣跑馬燈的工具，供你在演唱會、體育賽事等現場活動中使用。下載並使用本 App 即表示你同意本條款。</p>
+<h3 id="-2-安全警告請務必閱讀">⚠️ 2. 安全警告（請務必閱讀）</h3>
+<p><strong>2.1 光敏性癲癇警告</strong></p>
+<p>本 App 包含閃爍與頻閃特效。極少數人在接觸特定閃光或圖形時可能引發光敏性癲癇發作，即使過去沒有癲癇病史也可能發生。</p>
+<p>若你或家人有癲癇病史，使用閃爍特效前請先諮詢醫師。使用時若出現以下任一症狀，請<strong>立即停止使用</strong>並就醫：暈眩、視力改變、眼睛或肌肉抽動、意識混亂、失去方向感、任何不自主的動作、抽搐。</p>
+<p>你可以在設定頁關閉所有閃爍與頻閃特效。</p>
+<p><strong>2.2 現場安全</strong></p>
+<ul>
+<li>使用本 App 時請注意周遭環境。手機螢幕會維持最高亮度，可能影響你的暗處視覺，也可能影響他人。</li>
+<li>請勿在行走、騎車、駕駛時使用。</li>
+<li>舉高手機時請注意不要碰撞他人，並確保手機不會脫手掉落。</li>
+</ul>
+<p><strong>2.3 場館規定</strong></p>
+<p>許多場館、演唱會或活動主辦方<strong>禁止或限制</strong>使用手機燈光、應援板、閃光等物品。你有責任自行確認並遵守活動現場的規定。本 App 的開發者不對你因違反場館規定而受到的任何後果負責。</p>
+<p><strong>2.4 裝置狀況</strong></p>
+<p>長時間以最高亮度播放會顯著耗電，也可能使手機發熱。請自行留意電量與溫度，必要時暫停使用。本 App 不對裝置的耗電、發熱、電池老化或任何硬體損害負責。</p>
+<h3 id="3-電量機制">3. 電量機制</h3>
+<ul>
+<li>本 App 以「電量」計算免費可播放的時長。首次安裝時贈送一定分鐘數。</li>
+<li>你可以主動觀看獎勵式廣告換取額外時長。觀看廣告完全出於自願。</li>
+<li>電量有累積上限，且<strong>僅在跑馬燈實際播放時扣除</strong>。</li>
+<li>電量屬於本 App 內的功能配額，<strong>不是儲值金、不具現金價值、不可轉讓、不可要求兌換現金或退款</strong>。</li>
+<li>贈送分鐘數、廣告獎勵分鐘數與累積上限的具體數值，開發者保留隨時調整的權利。</li>
+<li>若你清除 App 資料或重新安裝，未使用的電量可能無法保留。</li>
+</ul>
+<h3 id="4-永久買斷">4. 永久買斷</h3>
+<ul>
+<li>「永久買斷」為一次性購買的非消耗型商品，購買後解鎖：無限播放時長、全部應援特效、圖案模式、以及擴充的預設檔數量。</li>
+<li>「永久」指<strong>本 App 持續提供服務期間</strong>，且權益綁定於你完成購買時所使用的 Google 帳號。</li>
+<li>換裝置或重新安裝後，請使用同一個 Google 帳號並透過「恢復購買」還原權益。</li>
+<li><strong>交易、發票與退款一律由 Google Play 處理</strong>，適用 Google Play 的退款政策。開發者無法直接為你退款，也無法接觸你的付款資訊。</li>
+<li>若 Google Play 通知購買已被退款或撤銷，相應權益將被收回。</li>
+</ul>
+<h3 id="5-廣告">5. 廣告</h3>
+<p>免費版包含由 Google AdMob 提供的獎勵式廣告，僅在你主動點擊「補充電量」時播放。<strong>跑馬燈播放畫面不含任何廣告。</strong> 購買永久買斷後不再顯示廣告。廣告內容由 Google 決定，開發者不經手、不背書。</p>
+<h3 id="6-你顯示的內容">6. 你顯示的內容</h3>
+<p>你對自己在本 App 中輸入並顯示的文字與圖案負完全責任。你同意不使用本 App 顯示以下內容：</p>
+<ul>
+<li>違反任何法律或活動現場規定的內容</li>
+<li>騷擾、威脅、歧視、仇恨、誹謗他人的內容</li>
+<li>侵害他人著作權、商標權、肖像權或隱私的內容</li>
+<li>猥褻或不適合公開場合的內容</li>
+</ul>
+<p>你輸入的內容全部留在你的裝置上，開發者無法檢視、無法審查、也不對其內容負責。</p>
+<h3 id="7-智慧財產">7. 智慧財產</h3>
+<p>本 App 的程式碼、介面設計、圖示、渲染引擎與特效設計均為開發者所有。你獲得的是在個人裝置上使用本 App 的個人、非專屬、不可轉讓授權。不得對本 App 進行反向工程、修改、再散布或商業轉售。</p>
+<h3 id="8-免責與責任限制">8. 免責與責任限制</h3>
+<ul>
+<li>本 App 以「現狀」提供，不保證完全無錯誤、不中斷，或在所有裝置上都能達到特定的效能表現。</li>
+<li>本 App 依賴 Google AdMob、Google Play Billing 與 Google Firebase 等第三方服務。這些服務中斷或變更所導致的功能異常，非開發者所能控制。</li>
+<li>在法律允許的最大範圍內，開發者對任何間接、附帶、衍生性損害不負責任，包括但不限於：因功能異常而錯失現場應援的機會、裝置耗電或發熱、資料遺失。</li>
+<li>在任何情況下，開發者的總賠償責任不超過你為本 App 實際支付的金額。</li>
+</ul>
+<h3 id="9-服務變更與終止">9. 服務變更與終止</h3>
+<p>開發者保留隨時新增、修改或移除功能的權利。若本 App 全面停止服務，已完成的買斷購買無法退款（如上述第 4 條，退款一律依 Google Play 政策辦理）。</p>
+<h3 id="10-條款變更">10. 條款變更</h3>
+<p>本條款若有修改，會更新本頁上方的版本與生效日期。重大變更會在 App 內告知。你在變更生效後繼續使用本 App，即表示接受修改後的條款。</p>
+<h3 id="11-準據法">11. 準據法</h3>
+<p>本條款以中華民國（台灣）法律為準據法。若你所在地的消費者保護法規賦予你更有利的權利，該權利不受本條款影響。</p>
+<hr>
+<h2 id="简体中文">简体中文</h2>
+<h3 id="1-关于本服务">1. 关于本服务</h3>
+<p>LiveLED 乐打灯（以下称「本应用」）是一款在手机屏幕上显示 LED 点阵跑马灯的工具，供你在演唱会、体育赛事等现场活动中使用。下载并使用本应用即表示你同意本条款。</p>
+<h3 id="-2-安全警告请务必阅读">⚠️ 2. 安全警告（请务必阅读）</h3>
+<p><strong>2.1 光敏性癫痫警告</strong></p>
+<p>本应用包含闪烁与频闪特效。极少数人在接触特定闪光或图形时可能引发光敏性癫痫发作，即使过去没有癫痫病史也可能发生。</p>
+<p>若你或家人有癫痫病史，使用闪烁特效前请先咨询医师。使用时若出现以下任一症状，请<strong>立即停止使用</strong>并就医：头晕、视力改变、眼睛或肌肉抽动、意识混乱、失去方向感、任何不自主的动作、抽搐。</p>
+<p>你可以在设置页关闭所有闪烁与频闪特效。</p>
+<p><strong>2.2 现场安全</strong></p>
+<ul>
+<li>使用本应用时请注意周遭环境。手机屏幕会保持最高亮度，可能影响你的暗处视觉，也可能影响他人。</li>
+<li>请勿在行走、骑车、驾驶时使用。</li>
+<li>举高手机时请注意不要碰撞他人，并确保手机不会脱手掉落。</li>
+</ul>
+<p><strong>2.3 场馆规定</strong></p>
+<p>许多场馆、演唱会或活动主办方<strong>禁止或限制</strong>使用手机灯光、应援板、闪光等物品。你有责任自行确认并遵守活动现场的规定。本应用的开发者不对你因违反场馆规定而受到的任何后果负责。</p>
+<p><strong>2.4 设备状况</strong></p>
+<p>长时间以最高亮度播放会显著耗电，也可能使手机发热。请自行留意电量与温度，必要时暂停使用。本应用不对设备的耗电、发热、电池老化或任何硬件损害负责。</p>
+<h3 id="3-电量机制">3. 电量机制</h3>
+<ul>
+<li>本应用以「电量」计算免费可播放的时长。首次安装时赠送一定分钟数。</li>
+<li>你可以主动观看激励视频广告换取额外时长。观看广告完全出于自愿。</li>
+<li>电量有累积上限，且<strong>仅在跑马灯实际播放时扣除</strong>。</li>
+<li>电量属于本应用内的功能配额，<strong>不是储值金、不具现金价值、不可转让、不可要求兑换现金或退款</strong>。</li>
+<li>赠送分钟数、广告奖励分钟数与累积上限的具体数值，开发者保留随时调整的权利。</li>
+<li>若你清除应用数据或重新安装，未使用的电量可能无法保留。</li>
+</ul>
+<h3 id="4-永久买断">4. 永久买断</h3>
+<ul>
+<li>「永久买断」为一次性购买的非消耗型商品，购买后解锁：无限播放时长、全部应援特效、图案模式、以及扩充的预设档数量。</li>
+<li>「永久」指<strong>本应用持续提供服务期间</strong>，且权益绑定于你完成购买时所使用的 Google 账号。</li>
+<li>换设备或重新安装后，请使用同一个 Google 账号并通过「恢复购买」还原权益。</li>
+<li><strong>交易、发票与退款一律由 Google Play 处理</strong>，适用 Google Play 的退款政策。开发者无法直接为你退款，也无法接触你的支付信息。</li>
+<li>若 Google Play 通知购买已被退款或撤销，相应权益将被收回。</li>
+</ul>
+<h3 id="5-广告">5. 广告</h3>
+<p>免费版包含由 Google AdMob 提供的激励视频广告，仅在你主动点击「补充电量」时播放。<strong>跑马灯播放画面不含任何广告。</strong> 购买永久买断后不再显示广告。广告内容由 Google 决定，开发者不经手、不背书。</p>
+<h3 id="6-你显示的内容">6. 你显示的内容</h3>
+<p>你对自己在本应用中输入并显示的文字与图案负完全责任。你同意不使用本应用显示以下内容：</p>
+<ul>
+<li>违反任何法律或活动现场规定的内容</li>
+<li>骚扰、威胁、歧视、仇恨、诽谤他人的内容</li>
+<li>侵害他人著作权、商标权、肖像权或隐私的内容</li>
+<li>猥亵或不适合公开场合的内容</li>
+</ul>
+<p>你输入的内容全部留在你的设备上，开发者无法查看、无法审查、也不对其内容负责。</p>
+<h3 id="7-知识产权">7. 知识产权</h3>
+<p>本应用的程序代码、界面设计、图标、渲染引擎与特效设计均为开发者所有。你获得的是在个人设备上使用本应用的个人、非专属、不可转让授权。不得对本应用进行反向工程、修改、再分发或商业转售。</p>
+<h3 id="8-免责与责任限制">8. 免责与责任限制</h3>
+<ul>
+<li>本应用以「现状」提供，不保证完全无错误、不中断，或在所有设备上都能达到特定的性能表现。</li>
+<li>本应用依赖 Google AdMob、Google Play Billing 与 Google Firebase 等第三方服务。这些服务中断或变更所导致的功能异常，非开发者所能控制。</li>
+<li>在法律允许的最大范围内，开发者对任何间接、附带、衍生性损害不负责任，包括但不限于：因功能异常而错失现场应援的机会、设备耗电或发热、数据丢失。</li>
+<li>在任何情况下，开发者的总赔偿责任不超过你为本应用实际支付的金额。</li>
+</ul>
+<h3 id="9-服务变更与终止">9. 服务变更与终止</h3>
+<p>开发者保留随时新增、修改或移除功能的权利。若本应用全面停止服务，已完成的买断购买无法退款（如上述第 4 条，退款一律依 Google Play 政策办理）。</p>
+<h3 id="10-条款变更">10. 条款变更</h3>
+<p>本条款若有修改，会更新本页顶部的版本与生效日期。重大变更会在应用内告知。你在变更生效后继续使用本应用，即表示接受修改后的条款。</p>
+<h3 id="11-准据法">11. 准据法</h3>
+<p>本条款以中华民国（台湾）法律为准据法。若你所在地的消费者保护法规赋予你更有利的权利，该权利不受本条款影响。</p>
+<hr>
+<h2 id="english">English</h2>
+<h3 id="1-about-this-service">1. About this service</h3>
+<p>LiveLED (the "App") is a tool that displays an LED dot-matrix marquee on your phone screen, for use at concerts, sporting events, and similar live events. By downloading and using the App you agree to these Terms.</p>
+<h3 id="-2-safety-warnings-please-read">⚠️ 2. Safety warnings (please read)</h3>
+<p><strong>2.1 Photosensitive seizure warning</strong></p>
+<p>The App includes flashing and strobe effects. A very small number of people may experience photosensitive epileptic seizures when exposed to certain flashing lights or patterns, even with no prior history of epilepsy.</p>
+<p>If you or a family member has a history of epilepsy, consult a doctor before using the flashing effects. Stop using the App <strong>immediately</strong> and seek medical attention if you experience any of: dizziness, altered vision, eye or muscle twitching, disorientation, confusion, any involuntary movement, or convulsions.</p>
+<p>All flashing and strobe effects can be turned off on the Settings screen.</p>
+<p><strong>2.2 Safety at the venue</strong></p>
+<ul>
+<li>Be aware of your surroundings. The screen is held at maximum brightness, which may affect your night vision and that of others.</li>
+<li>Do not use the App while walking, cycling, or driving.</li>
+<li>When raising your phone, take care not to strike others and make sure it will not slip from your hand.</li>
+</ul>
+<p><strong>2.3 Venue rules</strong></p>
+<p>Many venues, concerts, and event organisers <strong>prohibit or restrict</strong> phone lights, fan signs, and flashing devices. It is your responsibility to check and comply with the rules in force at the event. The developer is not responsible for any consequences of your violating venue rules.</p>
+<p><strong>2.4 Device condition</strong></p>
+<p>Extended playback at maximum brightness consumes significant battery and may cause the device to become warm. Monitor your battery level and temperature, and pause use if needed. The App is not responsible for battery consumption, heat, battery ageing, or any hardware damage.</p>
+<h3 id="3-energy-mechanism">3. Energy mechanism</h3>
+<ul>
+<li>The App measures free playback time as "energy". A number of minutes is granted on first install.</li>
+<li>You may voluntarily watch rewarded ads to obtain additional time. Watching ads is entirely optional.</li>
+<li>Energy has an accumulation cap and is <strong>deducted only while the marquee is actually playing</strong>.</li>
+<li>Energy is an in-app functional allowance. It is <strong>not stored credit, has no cash value, is non-transferable, and cannot be exchanged for cash or refunded.</strong></li>
+<li>The developer reserves the right to adjust the initial grant, the per-ad reward, and the cap at any time.</li>
+<li>If you clear the App's data or reinstall, unused energy may not be preserved.</li>
+</ul>
+<h3 id="4-lifetime-purchase">4. Lifetime purchase</h3>
+<ul>
+<li>The "lifetime purchase" is a one-time, non-consumable product. It unlocks unlimited playback time, all effects, pattern mode, and an expanded number of presets.</li>
+<li>"Lifetime" means <strong>for as long as the App continues to be offered</strong>, and the entitlement is tied to the Google account used to make the purchase.</li>
+<li>After changing devices or reinstalling, use the same Google account and tap "Restore purchase".</li>
+<li><strong>Transactions, invoices, and refunds are handled entirely by Google Play</strong> under Google Play's refund policy. The developer cannot issue refunds directly and never accesses your payment information.</li>
+<li>If Google Play reports that a purchase has been refunded or revoked, the corresponding entitlement will be withdrawn.</li>
+</ul>
+<h3 id="5-advertising">5. Advertising</h3>
+<p>The free version includes rewarded ads served by Google AdMob, played only when you tap "Recharge" yourself. <strong>The marquee playback screen contains no advertising.</strong> After the lifetime purchase, no ads are shown. Ad content is determined by Google; the developer neither handles nor endorses it.</p>
+<h3 id="6-content-you-display">6. Content you display</h3>
+<p>You are solely responsible for the text and patterns you enter and display in the App. You agree not to use the App to display:</p>
+<ul>
+<li>Content that violates any law or the rules of the event venue</li>
+<li>Content that harasses, threatens, discriminates against, expresses hatred toward, or defames others</li>
+<li>Content that infringes another person's copyright, trademark, likeness, or privacy</li>
+<li>Obscene content or content unsuitable for public display</li>
+</ul>
+<p>Everything you type stays on your device. The developer cannot view it, cannot moderate it, and is not responsible for its content.</p>
+<h3 id="7-intellectual-property">7. Intellectual property</h3>
+<p>The App's source code, interface design, icons, rendering engine, and effect designs belong to the developer. You are granted a personal, non-exclusive, non-transferable licence to use the App on your own devices. Reverse engineering, modification, redistribution, and commercial resale are prohibited.</p>
+<h3 id="8-disclaimer-and-limitation-of-liability">8. Disclaimer and limitation of liability</h3>
+<ul>
+<li>The App is provided "as is", without warranty that it is error-free, uninterrupted, or capable of any specific level of performance on every device.</li>
+<li>The App depends on third-party services including Google AdMob, Google Play Billing, and Google Firebase. Malfunctions caused by outages or changes in those services are outside the developer's control.</li>
+<li>To the maximum extent permitted by law, the developer is not liable for any indirect, incidental, or consequential damages, including but not limited to missed opportunities to cheer at an event, device battery drain or heat, or data loss.</li>
+<li>In no event shall the developer's total liability exceed the amount you actually paid for the App.</li>
+</ul>
+<h3 id="9-changes-to-and-discontinuation-of-the-service">9. Changes to and discontinuation of the service</h3>
+<p>The developer reserves the right to add, modify, or remove features at any time. If the App is discontinued entirely, completed purchases are not refundable (refunds are handled under Google Play's policy, per section 4).</p>
+<h3 id="10-changes-to-these-terms">10. Changes to these Terms</h3>
+<p>Any revision updates the version and effective date at the top of this page. Material changes will be announced in the App. Continuing to use the App after a change takes effect constitutes acceptance of the revised Terms.</p>
+<h3 id="11-governing-law">11. Governing law</h3>
+<p>These Terms are governed by the laws of Taiwan (R.O.C.). Where consumer protection law in your jurisdiction grants you more favourable rights, those rights are unaffected by these Terms.</p>
+<hr>
+<p class="muted"><em>LiveLED 樂打燈 · support@kyappstudio.com</em></p>
+<footer class="site">
+  LiveLED 樂打燈 · <a href="mailto:support@kyappstudio.com">support@kyappstudio.com</a>
+</footer>
+</div>
+</body>
+</html>
