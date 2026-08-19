@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiveLED 樂打燈 — 分享的設定</title>
+<meta name="robots" content="noindex">
+<style>
+:root { --bg:#ffffff; --fg:#1f2430; --muted:#5b6474; --accent:#7c3aed; --card:#f7f8fb; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#0a0e17; --fg:#e6e9f0; --muted:#9aa4b8; --accent:#a78bfa; --card:#111827; }
+}
+* { box-sizing: border-box; }
+body { margin:0; padding:32px 20px; background:var(--bg); color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;
+  line-height:1.7; display:flex; justify-content:center; }
+main { width:100%; max-width:34rem; }
+h1 { font-size:1.5rem; margin:0 0 12px; }
+p { color:var(--muted); margin:0 0 16px; }
+.btn { display:block; text-align:center; text-decoration:none; padding:14px 20px;
+  border-radius:999px; background:var(--accent); color:#fff; font-weight:600; margin:12px 0; }
+.btn.secondary { background:var(--card); color:var(--fg); }
+.warn { color:#b4266e; }
+</style>
+</head>
+<body>
+<main>
+  <h1>有人分享了一組跑馬燈設定</h1>
+  <p id="msg">這組設定就藏在這個網址裡，沒有經過任何伺服器。</p>
+  <a class="btn" id="open" href="#">在 LiveLED 中開啟</a>
+  <a class="btn secondary" href="https://play.google.com/store/apps/details?id=com.app.liveled">尚未安裝？前往 Google Play</a>
+  <p><a href="../index.html">關於 LiveLED 樂打燈</a></p>
+</main>
+<script>
+  // fragment 只存在於瀏覽器端。這一行是整頁唯一碰到設定內容的地方。
+  var code = location.hash.slice(1);
+  var open = document.getElementById('open');
+  if (code) {
+    open.href = 'liveled://s/#' + code;
+  } else {
+    open.style.display = 'none';
+    var m = document.getElementById('msg');
+    m.className = 'warn';
+    m.textContent = '這個連結沒有帶設定。請向分享的人要一次完整的連結。';
+  }
+</script>
+</body>
+</html>
